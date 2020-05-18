@@ -7,9 +7,8 @@ CLI tool to organise your filters in Gmail
 Ensure that Go is installed. If it isn't, visit [this link](https://golang.org/doc/install) to get 
 it setup.
 
-Ensure that you setup the Gmail API with your own API console. Follow step 1  
-[here](https://developers.google.com/gmail/api/quickstart/go) and make sure that you copy the 
-`credentials.json` file to the project root.
+Ensure that you setup the Gmail API with your own API console. Follow step 1 [here](https://developers.google.com/gmail/api/quickstart/go) 
+and make sure that you copy the `credentials.json` file to the project root.
 
 Clone the repository
 
