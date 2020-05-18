@@ -2,6 +2,32 @@
 
 CLI tool to organise your filters in Gmail
 
+## Running this tool
+
+Ensure that Go is installed. If it isn't, visit [this link](https://golang.org/doc/install) to get 
+it setup.
+
+Ensure that you setup the Gmail API with your own API console. Follow step 1  
+[here](https://developers.google.com/gmail/api/quickstart/go) and make sure that you copy the 
+`credentials.json` file to the project root.
+
+Clone the repository
+
+```bash
+$ git clone https://github.com/woojiahao/gmail-filter-organiser
+$ cd gmail-filter-organiser/
+```
+
+Run the tool
+
+```bash
+$ go run cmd/main.go
+```
+
+If this is the first time you are running this tool (or if the token has expired), the tool will
+prompt you to visit the site to authenticate your application. Once it has been authenticated, you
+will receive a token that you can copy over to the tool and press "Enter".
+
 ## Motivations to make this tool
 
 I have been using Gmail's labels and filters system to organise my inbox for a while now and one 
