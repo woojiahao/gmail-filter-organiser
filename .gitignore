@@ -24,3 +24,6 @@
 # Google API credentials files
 credentials.json
 token.json
+
+# Backups for filters
+backup/
