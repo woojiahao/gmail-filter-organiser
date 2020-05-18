@@ -11,6 +11,7 @@ import (
   "google.golang.org/api/gmail/v1"
   "google.golang.org/api/option"
   "io/ioutil"
+  . "log"
   "os"
 )
 
@@ -60,7 +61,7 @@ func getTokenFromFile() (*oauth2.Token, error) {
 }
 
 func saveToken(token *oauth2.Token) {
-  Info("Saving token file to: %s", tokenFilename)
+  Printf("Saving token to %s\n", tokenFilename)
   file, err := os.OpenFile(tokenFilename, os.O_RDWR|os.O_CREATE|os.O_TRUNC, 0600)
   IfError(err, "Unable to cache oauth token")
   defer func() {
