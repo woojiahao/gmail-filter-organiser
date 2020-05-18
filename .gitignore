@@ -17,3 +17,10 @@
 # GoLand specific files
 .idea/
 *.iml
+
+# Environment variables file
+.env
+
+# Google API credentials files
+credentials.json
+token.json
